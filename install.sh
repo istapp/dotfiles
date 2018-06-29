@@ -66,10 +66,10 @@ sudo pacman -S freetype2 freetype2-docs ttf-hack  --noconfirm --needed
 sudo pacman -S r pandoc pandoc-citeproc --noconfirm --needed
 
 # Misc
-sudo pacman -S gvim ctags fzf cups libreoffice-fresh gimp maim reflector udisks2 pacman-contrib --noconfirm --needed
+sudo pacman -S gvim ctags fzf help2man cups libreoffice-fresh gimp maim reflector udisks2 pacman-contrib --noconfirm --needed
 
 
-pacaur -S i3lock-color-git light-git words-insane nvme-cli --noedit --noconfirm
+pacaur -S i3lock-color-git light words-insane nvme-cli --noedit --noconfirm
 
 ##Repo
 cd $HOME
@@ -78,6 +78,11 @@ cd st
 make
 sudo make clean install
 cd $HOME
+
+#shell
+git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+chsh -s /bin/zsh
 
 ## Make dirs
 mkdir -p $HOME/desktop
