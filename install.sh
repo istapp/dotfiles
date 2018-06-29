@@ -69,7 +69,7 @@ sudo pacman -S r pandoc pandoc-citeproc --noconfirm --needed
 sudo pacman -S gvim ctags fzf cups libreoffice-fresh gimp maim reflector udisks2 pacman-contrib --noconfirm --needed
 
 
-pacaur -S i3lock-color-git light-git words-insane powerline-fonts-git nvme-cli --noedit --noconfirm
+pacaur -S i3lock-color-git light-git words-insane nvme-cli --noedit --noconfirm
 
 ##Repo
 cd $HOME
@@ -89,7 +89,9 @@ mkdir -p $HOME/public
 mkdir -p $HOME/templates
 mkdir -p $HOME/videos
 
-cp -fs $HOME/.config/awesome/themes/gruvbox/wallpapers/wall.png $HOME/pictures/wall.png
-cp -fs $HOME/.config/awesome/themes/gruvbox/wallpapers/lock.png $HOME/pictures/lock.png
+sudo cp -fs $HOME/.config/awesome/themes/gruvbox/wallpapers/wall.png $HOME/pictures/wall.png
+sudo cp -fs $HOME/.config/awesome/themes/gruvbox/wallpapers/lock.png $HOME/pictures/lock.png
+
+
 
 
