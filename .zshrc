@@ -37,7 +37,7 @@ export LESS='-iMRj.3'
 
 # scripts
 export PATH="$HOME/.bin:$PATH"
-
+source ~/.bin/fix-gruvbox-palette
 # zsh config
 export ZSH_CONFIG="$HOME/.zsh.d"
 

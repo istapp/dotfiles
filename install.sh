@@ -66,18 +66,23 @@ sudo pacman -S freetype2 freetype2-docs ttf-hack  --noconfirm --needed
 sudo pacman -S r pandoc pandoc-citeproc --noconfirm --needed
 
 # Misc
-sudo pacman -S gvim ctags fzf cups libreoffice-fresh gimp maim reflector udisks2 pacman-contrib --noconfirm --needed
+sudo pacman -S help2man gvim ctags fzf cups libreoffice-fresh gimp maim reflector udisks2 pacman-contrib --noconfirm --needed
 
 
-pacaur -S i3lock-color-git light-git words-insane powerline-fonts-git nvme-cli --noedit --noconfirm
+pacaur -S light i3lock-color-git light-git words-insane powerline-fonts-git nvme-cli --noedit --noconfirm
 
 ##Repo
-cd $HOME
+git clone https://github.com/istapp/dotfiles.git
+
+cd $HOME/
 git clone https://github.com/istapp/st.git
 cd st
 make
 sudo make clean install
-cd $HOME
+cd $HOME/
+
+#change shell
+git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 
 ## Make dirs
 mkdir -p $HOME/desktop
