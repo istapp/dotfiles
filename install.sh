@@ -33,16 +33,16 @@ rm -r /tmp/pacaur_install
 
 echo "Installing progs"
 # Window Manager
-sudo pacman -S xorg-server xorg-xinit xorg-xrdb xorg compton xdg-user-dirs xautolock dialog awesome gtk-engine-murrine lxappearance-gtk3 adapta-gtk-theme imagemagick --noconfirm --needed
+sudo pacman -S xorg-server xorg-xinit xorg-xrdb xorg compton xdg-user-dirs xautolock dialog awesome lxappearance-gtk3 imagemagick --noconfirm --needed
 
 # Terminal
 sudo pacman -S fzf neofetch neovim zsh tmux --noconfirm --needed
 
 # File Manager
-sudo pacman -S ranger atool w3m dosfstools exfat-utils feh libaca mediainfo highlight zathura zatura-pdf-mupdf zathura-djvu unzip unrar poppler ntfs-3g python-pillow python2-pillow file  --noconfirm --needed
+sudo pacman -S ranger atool w3m dosfstools light exfat-utils feh libaca mediainfo highlight zathura zatura-pdf-mupdf zathura-djvu unzip unrar poppler ntfs-3g python-pillow python2-pillow file  --noconfirm --needed
 
 # Browser
-sudo pacman -S qutebrowser --noconfirm --needed
+sudo pacman -S qutebrowser firefox --noconfirm --needed
 
 # Media
 sudo pacman -S mpd youtube-dl youtube-viewer mpv mpc ncmpcpp alsa-utils --noconfirm --needed
@@ -69,7 +69,7 @@ sudo pacman -S r pandoc pandoc-citeproc --noconfirm --needed
 sudo pacman -S gvim ctags fzf cups libreoffice-fresh gimp maim reflector udisks2 pacman-contrib --noconfirm --needed
 
 
-pacaur -S i3lock-color-git light-git words-insane nvme-cli --noedit --noconfirm
+pacaur -S i3lock-color-git words-insane nvme-cli --noedit --noconfirm
 
 ##Repo
 cd $HOME
